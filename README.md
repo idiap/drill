@@ -11,7 +11,7 @@ a Pytorch implementation of DRILL which allows to build deep residual output lay
   title     = {Deep Residual Output Layers for Neural Language Generation},
   booktitle = {Proceedings of the 36th International Conference on Machine Learning},
   address   = {Long Beach, California},
-  year      = {2018}
+  year      = {2019}
 }
 ```
 
