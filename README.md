@@ -73,7 +73,7 @@ python finetune.py --data data/wiki2 --dropouth 0.2 --seed 1882 --epoch 2000  --
 Our pretrained version of the above model can be obtained as follows:
 
 ```
-./gdown.pl https://drive.google.com/open?id=1WlCiYEQOJoXLCu0yKQXArJsr_q3vqYtw wiki2.zip
+./gdown.pl https://drive.google.com/open?id=1Mf1GXAGsCgjWNaj2JEGgEe0KsU45K_jo wiki2.zip
 ```
 
 # Machine Translation
