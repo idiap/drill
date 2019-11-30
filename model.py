@@ -62,7 +62,7 @@ class RNNModel(nn.Module):
             self.dropjoint = nn.Dropout(joint_dropout if self.use_dropout else 0)
 
             # Define the first layer of the label encoder network
-             if joint_emb_activation != "Linear":
+            if joint_emb_activation != "Linear":
                 self.joint_encoder_proj_0 = nn.Sequential(nn.Linear(ninp, joint_emb, bias=True), eval("nn.%s()" % joint_emb_activation))
             else:
                 self.joint_encoder_proj_0 = nn.Sequential(nn.Linear(ninp, joint_emb, bias=True))
@@ -196,7 +196,7 @@ class RNNModel(nn.Module):
                 if i > 0 and self.joint_residual_prev:
                     cur_output_proj = cur_output_proj + prevs_hidden_out[i]
 
-               if not self.joint_noresid:
+                if not self.joint_noresid:
                     cur_output_proj = cur_output_proj + output
 
                 prevs_hidden_out.append(cur_output_proj)
